@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - '*.py'
-      - 'requirements*.txt'
-      - '.env'
   workflow_dispatch:
 
 jobs:
@@ -37,9 +33,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: python-app
-          path: |
-            release.zip
-            !venv/
+          path: release.zip
 
   deploy:
     runs-on: ubuntu-latest
