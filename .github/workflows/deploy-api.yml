@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - Test
+    paths:
+      - '*.py'
+      - 'requirements*.txt'
+      - '.env'
+      - '!react-ui/**'
   workflow_dispatch:
 
 jobs:
