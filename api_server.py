@@ -1,3 +1,6 @@
+# RAG Summarizer API Server
+# Updated: 2024-01-15 - Force deployment trigger
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
