@@ -1,3 +1,4 @@
+#
 import os
 import logging
 from typing import List, Dict, Optional
@@ -6,7 +7,7 @@ from dotenv import load_dotenv
 
 from langchain_openai import AzureOpenAIEmbeddings, AzureChatOpenAI
 from langchain_community.vectorstores import FAISS, AzureSearch
-from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 
 import azure.cognitiveservices.speech as speechsdk
